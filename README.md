@@ -8,7 +8,7 @@ A responsive, accessible Next.js web application designed for Dr. Maya Reynolds,
 
 - 🌐 **Live Website**: https://grow-my-therapy-maya-reynolds-rho.vercel.app/
 - 🎥 **Demo Walkthrough Video**: https://www.loom.com/share/7bbcf41bf82d4bcabf35cc12e29561f9
-- 🐙 **GitHub Repository**: [https://github.com/your-username/dr-maya-reynolds-therapy](https://github.com/your-username/dr-maya-reynolds-therapy)
+- 🐙 **GitHub Repository**: https://github.com/yandamurividyasagar-dev/grow-my-therapy-maya-reynolds.git
 
 ---
 
