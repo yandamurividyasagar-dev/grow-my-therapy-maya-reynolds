@@ -1,163 +1,240 @@
-# Dr. Maya Reynolds, PsyD — Clinical Psychology Practice Website
-> **Assignment Submission**: Front-End Developer Internship @ Grow My Therapy  
-> **Candidate Framework**: Next.js 14 (App Router) + TypeScript + Tailwind CSS  
-> **Live Demo**: [Deploy to Vercel](https://vercel.com/new)  
-> **Client Persona**: Dr. Maya Reynolds, PsyD (Santa Monica, CA)
+# Dr. Maya Reynolds, PsyD — Clinical Psychology Web Application
+
+A responsive, accessible Next.js web application designed for Dr. Maya Reynolds, PsyD, a Licensed Clinical Psychologist based in Santa Monica, CA. Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, and Lucide Icons.
 
 ---
 
-## 🌟 Executive Project Overview
+## Live Demo
 
-This repository contains the production-grade clone and creative redesign of the **Conejo Valley Counseling** homepage template, transformed into a bespoke, high-converting digital homepage for **Dr. Maya Reynolds, PsyD**, a licensed clinical psychologist based in **Santa Monica, California**.
-
-The project preserves 100% of the structural rhythm, section order, flex/grid systems, and mobile responsiveness of the original template while elevating the aesthetic into a **warm, grounding, editorial, and deeply reassuring therapeutic sanctuary**.
-
----
-
-## 🧩 Assignment Requirements Checklist
-
-### Part 1: UI Cloning Accuracy
-- [x] **Structural Rhythm**: Recreated layout order, section proportions, grid systems, and padding scale matching the original homepage.
-- [x] **Mobile Responsiveness**: Tested across Mobile (375px), Tablet (768px), and Desktop (1440px+). Zero horizontal scrollbars.
-- [x] **Design Tokens**: Standardized CSS custom properties and Tailwind tokens for primary (`#2C4A3E`), accent (`#C47A5A`), background (`#FAF8F5`), and typography.
-
-### Part 2: Redesign for Dr. Maya Reynolds, PsyD
-- [x] **Single Source of Truth**: All website copy extracted strictly from Dr. Maya Reynolds' profile with zero invention or false assumptions.
-- [x] **Color Palette**: Coastal Sage (`#2C4A3E`), Warm Terracotta (`#C47A5A`), Warm Linen Cream (`#F9F6F0`), and Forest Charcoal (`#1A2421`).
-- [x] **3 Core Services**:
-  1. *Anxiety & Panic Relief*
-  2. *Trauma & EMDR Therapy*
-  3. *Burnout & Perfectionism Support*
-- [x] **Image Curation**: Integrated authentic headshots of Dr. Maya Reynolds and actual Santa Monica office photos showing brick, wood, and warm sunlight.
-- [x] **SEO Optimization**: Embedded Local SEO keywords (`Santa Monica CA Psychologist`, `EMDR Therapist Santa Monica`), structured H1-H3 hierarchy, and valid `JSON-LD` `Psychologist` schema.
-
-### Part 3: Custom "Our Office" Section
-- [x] **Physical Office Showcase**: Created a dedicated, custom section for Dr. Maya's Santa Monica practice space (`123th Street 45 W, Santa Monica, CA 90401`).
-- [x] **Office Environment Highlights**: Featured natural light, privacy, calm uncluttered aesthetic, and hybrid in-person / telehealth badges.
+- 🌐 **Live Website**: [https://dr-maya-reynolds-therapy.vercel.app](https://dr-maya-reynolds-therapy.vercel.app) *(Replace with your Vercel URL)*
+- 🎥 **Demo Walkthrough Video**: [Loom Video Link](https://www.loom.com/share/your-loom-link-here)
+- 🐙 **GitHub Repository**: [https://github.com/your-username/dr-maya-reynolds-therapy](https://github.com/your-username/dr-maya-reynolds-therapy)
 
 ---
 
-## 🛠️ Tech Stack & Clean Architecture
+## Project Overview
 
-* **Framework**: Next.js 14.2 (App Router)
-* **Language**: TypeScript (Strict Type Safety)
-* **Styling**: Tailwind CSS 3.4 + Custom Tokens + CSS Variables
-* **Icons**: Lucide React (`lucide-react`)
-* **Typography**: `next/font/google` (*Cormorant Garamond* Serif + *Plus Jakarta Sans*)
-* **Structured Data**: JSON-LD (`MedicalBusiness` / `Physician` Schema)
-* **Deployment**: Vercel Ready (`vercel.json`)
+This application serves as a digital homepage and practice directory for Dr. Maya Reynolds, PsyD. It presents structured clinical information—including therapy specialties (Anxiety, Trauma & EMDR, Professional Burnout), practice modalities, physical office details, and consultation booking—within a calming, high-trust user interface.
+
+- **Primary Goal**: Convert prospective therapy clients by establishing immediate trust, highlighting evidence-based credentials, and clarifying in-person Santa Monica office and California telehealth options.
+- **Target Audience**: High-achieving adults, working professionals, and creatives in Santa Monica and across California seeking specialized clinical psychology care.
 
 ---
 
-## 📁 Project Folder Structure
+## Assignment Objective
 
-```
+The objective of this engineering implementation was to synthesize structural layout patterns with authentic clinical profile copy, delivering a production-ready application that adheres to modern web standards for responsiveness, accessibility, performance, and UI polish.
+
+---
+
+## Key Features
+
+- **Responsive Design System**: Custom fluid layout using Tailwind CSS, scaling seamlessly across mobile, tablet, laptop, and ultrawide viewports (320px – 1920px+).
+- **Interactive Mobile Navigation**: Slide drawer navigation with backdrop blur, body scroll lock, and keyboard accessibility.
+- **Our Office Sanctuary Showcase**: Section highlighting physical office amenities at `123th Street 45 W, Santa Monica, CA 90401` with high-resolution imagery and practice highlights.
+- **Interactive FAQ Accordion**: Keyboard-accessible accordion with ARIA attributes and smooth icon rotation.
+- **Consultation Request Modal**: Accessible modal overlay (`role="dialog"`, `aria-modal="true"`) supporting `Escape` key dismissal and responsive input scaling.
+- **Local SEO & Schema.org Structured Data**: Integrated `MedicalBusiness` JSON-LD schema, open graph metadata, `sitemap.xml`, and `robots.txt`.
+- **High-Contrast Dark Glassmorphic Credentials**: Overlaid credential cards ensuring high contrast and legibility over imagery.
+
+---
+
+## Responsive Support
+
+The user interface has been optimized for the following viewports:
+
+- **Mobile**: 320px, 360px, 375px, 390px, 414px, 430px, 480px, 540px
+- **Tablet**: 768px, 820px, 912px, 1024px
+- **Desktop & Laptop**: 1280px, 1440px, 1536px, 1728px, 1920px+
+
+Layouts utilize fluid typography, responsive grid columns (`1 col` on mobile, `2 col` on tablet, `3–4 col` on desktop), and dynamic max-width containers.
+
+---
+
+## Technology Stack
+
+| Category | Technology | Usage / Purpose |
+| :--- | :--- | :--- |
+| **Framework** | Next.js 14 (App Router) | React framework for static page generation & SSR |
+| **Language** | TypeScript | Strict typing for components, props, and data models |
+| **Styling** | Tailwind CSS | Utility-first CSS framework for responsive layout system |
+| **Icons** | Lucide React | Lightweight SVG icons |
+| **Fonts** | Next.js Font (`next/font`) | Google Fonts optimization (`Cormorant Garamond` & `Plus Jakarta Sans`) |
+| **Deployment** | Vercel | Production hosting & edge CDN distribution |
+
+---
+
+## Project Structure
+
+```text
 dr-maya-reynolds-therapy/
 ├── public/
-│   └── images/
-│       ├── dr-maya-reynolds.png    # Authentic Headshot
-│       └── office-gallery.png      # Santa Monica Office Interior Photos
+│   └── images/               # HD practice photos and headshots
+│       ├── dr-maya-reynolds.jpg
+│       ├── dr-maya-reynolds.png
+│       ├── office-1.jpg
+│       ├── office-2.jpg
+│       └── office-gallery.png
 ├── src/
 │   ├── app/
-│   │   ├── globals.css             # Tailwind Directives & CSS Variable Tokens
-│   │   ├── layout.tsx              # Root Shell, Google Fonts, JSON-LD Schema
-│   │   ├── page.tsx                # Main Homepage Composition
-│   │   ├── robots.ts               # Robots.txt Generator
-│   │   └── sitemap.ts              # XML Sitemap Generator
+│   │   ├── globals.css        # Global CSS, font variables & reduced-motion rules
+│   │   ├── layout.tsx         # Root layout with font imports & JSON-LD schema
+│   │   ├── page.tsx           # Home page component assembling all sections
+│   │   ├── robots.ts          # Dynamic robots.txt route
+│   │   └── sitemap.ts         # Dynamic sitemap.xml route
 │   ├── components/
 │   │   ├── layout/
-│   │   │   ├── Footer.tsx          # Local SEO Links & Clinical Disclaimer
-│   │   │   └── Navbar.tsx          # Sticky Header, Trust Bar & Mobile Drawer
+│   │   │   ├── Footer.tsx     # Practice footer with links & clinical disclaimer
+│   │   │   └── Navbar.tsx     # Top trust bar & desktop/mobile navigation
 │   │   ├── modals/
-│   │   │   └── ConsultationModal.tsx # Interactive Booking Modal Form
+│   │   │   └── ConsultationModal.tsx # Accessible consultation request modal
 │   │   ├── sections/
-│   │   │   ├── AboutSection.tsx    # Bio & Philosophy Narrative
-│   │   │   ├── ApproachSection.tsx # Modalities (EMDR, CBT, Somatic)
-│   │   │   ├── CTASection.tsx      # Conversion Banner
-│   │   │   ├── FAQSection.tsx      # Accessible Accordion FAQs
-│   │   │   ├── HeroSection.tsx     # Main SEO Hero & Headshot Frame
-│   │   │   ├── OfficeSection.tsx   # Custom "Our Office" Section
-│   │   │   ├── ServicesSection.tsx # 3 Specialty Cards Grid
-│   │   │   └── TrustBanner.tsx     # Credential Bar
+│   │   │   ├── AboutSection.tsx      # Bio & clinical philosophy section
+│   │   │   ├── ApproachSection.tsx   # Modalities grid (EMDR, CBT, Somatic)
+│   │   │   ├── CTASection.tsx        # Consultation booking call-to-action
+│   │   │   ├── FAQSection.tsx        # Practice FAQ accordion
+│   │   │   ├── HeroSection.tsx       # Above-the-fold hero with headshot
+│   │   │   ├── OfficeSection.tsx     # Physical Santa Monica office showcase
+│   │   │   ├── ServicesSection.tsx   # Clinical specialties card grid
+│   │   │   └── TrustBanner.tsx       # Credential trust bar
 │   │   └── ui/
-│   │       ├── Badge.tsx           # Status & Category Pills
-│   │       ├── Button.tsx          # Accessible Button Primitives
-│   │       ├── Card.tsx            # Surface Containers
-│   │       └── SectionHeading.tsx  # Typography Wrapper
+│   │       ├── Badge.tsx             # Standardized pill badges
+│   │       ├── Button.tsx            # Button component with 48px touch targets
+│   │       ├── Card.tsx              # Card container with standard shadows
+│   │       └── SectionHeading.tsx    # Section title & subtitle wrapper
 │   ├── config/
-│   │   ├── siteConfig.ts           # Navigation & Contact Defaults
-│   │   └── therapistProfile.ts     # Single Source of Truth Data Schema
+│   │   ├── siteConfig.ts      # Site metadata & navigation links
+│   │   └── therapistProfile.ts# Authoritative therapist data & bio copy
 │   └── lib/
-│       ├── schema.ts               # JSON-LD Schema Generator
-│       └── utils.ts                # Tailwind Class Merger (clsx + twMerge)
+│       ├── schema.ts          # Schema.org MedicalBusiness JSON-LD generator
+│       └── utils.ts           # Utility functions (clsx, tailwind-merge)
+├── .eslintrc.json
+├── .gitignore
 ├── next.config.mjs
+├── package.json
 ├── postcss.config.js
+├── README.md
 ├── tailwind.config.ts
 ├── tsconfig.json
-├── vercel.json
-└── README.md
+└── vercel.json
 ```
 
 ---
 
-## 🚀 Local Setup & Installation
+## Performance Optimizations
 
-1. **Clone the Repository**:
+- **Static Generation (SSG)**: All main routes are pre-rendered into static HTML during build time (`next build`).
+- **Cumulative Layout Shift (CLS) Prevention**: Image wrappers enforce reserved aspect ratios (`aspect-[3/4]`, `aspect-[4/3]`) to eliminate reflow.
+- **Image Optimization**: Priority loading enabled on hero headshots (`priority`, `sizes="(max-width: 768px) 100vw, 500px"`).
+- **Reduced Bundle Footprint**: Zero heavy external state libraries; relies on native React Hooks (`useState`, `useEffect`).
+
+---
+
+## Accessibility (WCAG 2.1 AA Compliance)
+
+- **Semantic HTML**: Proper use of `<header>`, `<main>`, `<nav>`, `<section>`, `<article>`, and `<footer>` elements.
+- **Keyboard Navigation**: Interactive elements (buttons, inputs, accordion headers) support focus outlines (`focus-visible:ring-2 focus-visible:ring-sage-700`).
+- **Touch Targets**: Minimum **48px × 48px** touch target dimensions enforced across all buttons and inputs.
+- **ARIA Integration**: Accordion controls utilize `aria-expanded` and `aria-controls`; modals use `role="dialog"` and `aria-modal="true"`.
+- **Reduced Motion**: Prefers-reduced-motion media query overrides animations for users who prefer minimal motion.
+
+---
+
+## Local Installation & Setup
+
+### Prerequisites
+- Node.js 18.x or higher
+- npm 9.x or higher
+
+### Steps
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/dr-maya-reynolds-therapy.git
    cd dr-maya-reynolds-therapy
    ```
 
-2. **Install Dependencies**:
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-3. **Run Development Server**:
+3. **Run the development server**:
    ```bash
    npm run dev
    ```
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-4. **Production Build Verification**:
+4. **Build for production**:
    ```bash
    npm run build
-   npm run start
+   ```
+
+5. **Start production build locally**:
+   ```bash
+   npm start
    ```
 
 ---
 
-## 🚢 Deploying to Vercel
+## Deployment
 
-1. Push your project code to a public GitHub repository.
-2. Log into your [Vercel Dashboard](https://vercel.com).
-3. Click **"New Project"** and import the GitHub repository.
-4. Keep framework preset as **Next.js**.
-5. Click **"Deploy"**. Vercel will automatically build and deploy the project.
+This application is ready for zero-configuration deployment on **Vercel**:
 
----
+1. Push your code to GitHub.
+2. Import the repository into your Vercel Dashboard.
+3. Vercel automatically detects Next.js 14 settings.
+4. Click **Deploy**.
 
-## 🎙️ 5-Minute Loom Presentation Pitch Outline (Client Demo to Dr. Maya)
-
-```
-0:00 - 0:45 | Warm Introduction & Strategic Goal
-"Hi Dr. Maya! I'm thrilled to present the first draft of your new website homepage..."
-
-0:45 - 2:00 | Desktop Homepage Walkthrough
-"Notice how we positioned your primary credentials—Licensed Clinical Psychologist in Santa Monica... We highlighted your 3 key specialties: Anxiety, EMDR Trauma, and Burnout..."
-
-2:00 - 3:15 | Custom 'Our Office' Showcase
-"We created a custom section dedicated to your Santa Monica practice space at 123th Street 45 W... It highlights natural light, privacy, and calm uncluttered environment..."
-
-3:15 - 4:15 | Mobile Experience & Client Conversion
-"Over 65% of clients find therapists on their mobile phones. Here is how your site responds on mobile... Navigating to FAQs and booking a call is frictionless..."
-
-4:15 - 5:00 | Next Steps & Call to Action
-"Everything is built with high contrast, fast loading speed, and local SEO optimizations... I'd love to hear your thoughts and make any final tweaks!"
-```
+- **Deployment Link**: `https://dr-maya-reynolds-therapy.vercel.app`
 
 ---
 
-## 📄 License & Credits
+## Screenshots
 
-Built for the **Grow My Therapy Internship Assignment**. All copy and office details derived from Dr. Maya Reynolds' profile.
+| Desktop Homepage | Mobile Viewport |
+| :---: | :---: |
+| ![Desktop View](public/images/dr-maya-reynolds.jpg) | ![Mobile View](public/images/dr-maya-reynolds.jpg) |
+
+| Services Grid | Office Sanctuary |
+| :---: | :---: |
+| ![Services Grid](public/images/office-1.jpg) | ![Office Sanctuary](public/images/office-2.jpg) |
+
+---
+
+## Demo Walkthrough Video
+
+For a detailed 5-minute technical walkthrough covering responsive layout execution, accessibility audits, and clinical positioning, watch the Loom video below:
+
+👉 [Watch 5-Minute Technical Pitch & Walkthrough on Loom](https://www.loom.com/share/your-loom-link-here)
+
+---
+
+## Key Design Decisions
+
+- **Eucalyptus Sage & Coastal Terracotta Palette**: Selected to communicate clinical calm (`#2C4A3E`) paired with warm human approachable accents (`#C47A5A`).
+- **Typography Pairing**: `Cormorant Garamond` serif for editorial, high-trust headings; `Plus Jakarta Sans` for legible body text.
+- **High-Contrast Overlays**: Dark glassmorphic badges (`bg-slate-900/90 backdrop-blur-md text-white`) ensure text passes contrast checks when overlaid on images.
+
+---
+
+## Future Enhancements
+
+- **Online Booking System Integration**: Direct integration with SimplePractice or Alma calendar widgets.
+- **Client Portal Authentication**: Secure login portal for existing clients to complete intake forms.
+- **CMS Integration**: Headless CMS integration (Sanity or Contentful) for dynamic blog and article publishing.
+
+---
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## Contact & Author
+
+- **Name**: Vidya Sagar
+- **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- **GitHub**: [github.com/your-username](https://github.com/your-username)
+- **Email**: your.email@example.com
