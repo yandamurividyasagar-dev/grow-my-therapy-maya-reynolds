@@ -12,6 +12,7 @@
     scroll-behavior: smooth;
     color: #1A2421;
     background-color: #FAF8F5;
+    -webkit-text-size-adjust: 100%;
   }
   
   body {
@@ -43,6 +44,16 @@
   animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* Reduced Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Accessible custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -57,3 +68,4 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #2C4A3E;
 }
+

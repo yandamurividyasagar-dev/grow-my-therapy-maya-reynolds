@@ -9,7 +9,7 @@ interface CTASectionProps {
 
 export const CTASection: React.FC<CTASectionProps> = ({ onOpenConsultation }) => {
   return (
-    <section className="py-20 md:py-28 bg-sage-700 text-linen-50 relative overflow-hidden">
+    <section className="py-16 md:py-20 lg:py-24 bg-sage-700 text-linen-50 relative overflow-hidden">
       {/* Background Soft Glow Accents */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-sage-600/40 rounded-full filter blur-3xl -z-10 translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-terracotta-500/20 rounded-full filter blur-3xl -z-10 -translate-x-1/2 translate-y-1/2"></div>

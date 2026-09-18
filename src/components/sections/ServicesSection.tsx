@@ -13,7 +13,7 @@ interface ServicesSectionProps {
 
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsultation }) => {
   return (
-    <section id="services" className="py-20 md:py-28 bg-linen-50">
+    <section id="services" className="py-16 md:py-20 lg:py-24 bg-linen-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <SectionHeading

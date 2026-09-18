@@ -11,7 +11,7 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsultation }) => {
   return (
-    <section className="relative pt-10 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-linen-50">
+    <section className="relative py-16 md:py-20 lg:py-24 overflow-hidden bg-linen-50">
       {/* Background Soft Ambient Glows */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-sage-100/50 rounded-full filter blur-3xl -z-10 translate-x-1/3 -translate-y-1/3"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-terracotta-100/40 rounded-full filter blur-3xl -z-10 -translate-x-1/3 translate-y-1/3"></div>
